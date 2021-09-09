@@ -13,3 +13,7 @@ app.get('/closeExcel', (req, res) => {
     exec("taskkill /IM excel.exe");
     res.send("Excel closed on 172.16.213.254");
 });
+
+app.get('/testAuth', (req, res) => {
+    res.send("Authentication testing");
+})
